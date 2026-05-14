@@ -15,33 +15,49 @@ if(!isset($_SESSION['usuario']) && isset($_COOKIE['usuario'])){
     <title>Login</title>
 
     <style>
-        body{
-            font-family: Arial;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background: #f0f0f0;
-        }
+    html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
 
-        .box{
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            width: 300px;
-            text-align: center;
-        }
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center; /* Centraliza horizontalmente */
+        align-items: center;     /* Centraliza verticalmente */
+        height: 100vh;           /* Ocupa toda a altura da tela */
+        background: #f0f0f0;
+    }
 
-        input{
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-        }
+    .box {
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        width: 300px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
 
-        button{
-            padding: 10px 20px;
-            cursor: pointer;
-        }
+    input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        box-sizing: border-box; /* Evita que padding quebre o layout */
+    }
+
+    button {
+        padding: 10px 20px;
+        cursor: pointer;
+        border: none;
+        background: #007BFF;
+        color: white;
+        border-radius: 5px;
+    }
+
+    button:hover {
+        background: #0056b3;
+    }
     </style>
 </head>
 <body>
